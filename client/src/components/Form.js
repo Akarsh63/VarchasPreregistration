@@ -15,7 +15,7 @@ const Form = () => {
     const sendData = async()=>{
         if(name!=='' && number!=='' && email!=='' && college!==''){
         try {
-            const response = await axios.post('http://localhost:8000/pre-registration',{name,email,number,college});
+            const response = await axios.post('https://varchaspreregistration.onrender.com/pre-registration',{name,email,number,college});
               console.log(response)
               setName('')
               setNumber('')
